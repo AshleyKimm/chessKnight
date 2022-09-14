@@ -1,5 +1,3 @@
-# chessKnight
-
 If position of knight = d5, the possible moves it can make are:
 
 		c7	e7
