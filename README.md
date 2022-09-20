@@ -34,3 +34,35 @@ int solution(std::string cell) checks if:
 	- the calculated knight's move is within the chessboard
 
 If all the conditions are met, int variable cnt increments by 1.
+
+Sample tests
+
+Test 1
+Input: "a1"
+Expected Output: 2
+
+Test 2
+Input: "c2"
+Expected Output: 6
+
+Test 3
+Input: "d4"
+Expected Output: 8
+
+Test 4
+Input: "g6"
+Expected Output: 6
+
+Test 5
+Input: "a3"
+Expected Output: 4
+
+Test 6
+Input: "b7"
+Expected Output: 4
+
+Test 7
+Input: "h8"
+Expected Output: 2
+
+
