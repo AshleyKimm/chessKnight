@@ -1,41 +1,42 @@
 #include <iostream>
 #include <string.h>
+using namespace std;
 
 int main();
-int solution(std::string cell);
+int solution(string cell);
 
 int main() {
     
-    std::string pos{};
+    string pos{};
     while (true) {
         // Input: x position
-        std::cout << "Enter the x position of knight: ";
-        std::cin >> pos;
+        cout << "Enter the x position of knight: ";
+        cin >> pos;
 
         // Prevents invalid input
         if (pos[0] >= 'a' && pos[0] <= 'h') break;
-        else std::cout << "Please enter the valid character. ";
+        else cout << "Please enter the valid character. ";
     }
 
-    std::string posy{};
+    string posy{};
     while (true) {
         // Input: y position
-        std::cout << "Enter the y position of knight: ";
-        std::cin >> posy;
+        cout << "Enter the y position of knight: ";
+        cin >> posy;
 
         // Prevents invalid input
         if (posy[0] >= '1' && posy[0] <= '8') break;
-        else std::cout << "Please enter the valid character. ";
+        else cout << "Please enter the valid character. ";
     }
     
     pos += posy;
-    std::cout << "The knight can perform " << solution(pos) << " different moves from this position. ";
+    cout << "The knight can perform " << solution(pos) << " different moves from this position. ";
     return 0;
 }
 
 
 
-int solution(std::string cell) {
+int solution(string cell) {
     int cnt{};
     for (int i{-2}; i <= 2; ++i) {
         if (i == 0) ++i;
